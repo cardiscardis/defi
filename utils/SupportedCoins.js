@@ -1,0 +1,5 @@
+export const ETH = 'Eth'
+export const JUDE = 'JUDE'
+export const COINB = 'CoinB'
+export const COINC = 'CoinC'
+export const DEFAULT_VALUE = 'Select a token'
