@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { ethers } from 'ethers';
 import divineCoinJson from './divine.json'
 
-const contractAddress = process.env.NEXT_PUBLIC_CONTRACT_ADDRESS;
+const contractAddress = '0xb39a34929b45d70af809e423189b7fb8593794c2';
 const contractABI = divineCoinJson.abi
 
 export default function Home() {
@@ -27,8 +27,8 @@ export default function Home() {
                 const signer = provider.getSigner();
                 const signerAddress = await signer.getAddress()
                 // const divineCoin2 = new ethers.Contract(contractAddress, contractABI, signer);
-                const provider2 = new ethers.providers.JsonRpcProvider(process.env.NEXT_PUBLIC_JSON_RPC);
-                const signer2 = new ethers.Wallet(process.env.NEXT_PUBLIC_PRIVATE_KEY, provider2);
+                const provider2 = new ethers.providers.JsonRpcProvider('https://public-node.testnet.rsk.co');
+                const signer2 = new ethers.Wallet('8295d8ae8aabfb6f2d8d971d0c0f99aba97aa2e490e4ccdfcdc0826aa82cf63b', provider2);
                 const contract = new ethers.Contract(
                     contractAddress,
                     contractABI,
