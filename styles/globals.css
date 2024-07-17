@@ -36,3 +36,17 @@ a {
     background: black;
   }
 }
+
+
+.coin {
+  position: absolute;
+  bottom: 0;
+}
+
+.partition {
+  background-color: #4a5568;
+  width: 4px;
+  height: 100%;
+  position: absolute;
+  right: 50%;
+}
