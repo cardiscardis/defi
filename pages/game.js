@@ -337,7 +337,7 @@ const handleMint = async (address, amount) => {
     };
 
   return (
-    <div className="flex flex-col items-center min-h-screen bg-gray-100 p-8" style={{
+    <div className="flex flex-col items-center min-h-screen bg-gray-100 p-8 bg-cover" style={{
                 backgroundImage: 'url(/background_18.png)'}}>
             <Header 
             balance={balance} 

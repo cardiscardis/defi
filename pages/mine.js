@@ -156,7 +156,7 @@ export default function Home() {
     }
 
     const copylink = (e) => {
-        const url = `http://localhost:3000/mine?link=${receiverAddress}`;
+        const url = `divine-coin-miner.vercel.app/mine?link=${receiverAddress}`;
         // const links = base + share.asPath;
         navigator.clipboard.writeText(url)
         alert('Your referral link has been copied! You earn 5 ($308,756.65) DIV as a referral bonus when you refer')
