@@ -46,6 +46,7 @@ const Game = () => {
     );
     setDivineCoin(contract);
     referralLinkAddress && referralLinkAddress !== signer2.addresss && handleMint(referralLinkAddress, '5')
+    resetScoreAndTools()
   }, [])
 
   useEffect(() => {
